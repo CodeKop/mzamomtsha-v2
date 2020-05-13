@@ -1,7 +1,15 @@
+/* 
+ * Creates a variable that can be used anywhere in the css, it is used to 
+ * create a left padding on both the two heading rows so that the logo that
+ * is does not appear over any of the heading text.
+*/
 :root {
     --logo-width: 110px;
 }
 
+/*
+ * The styles for the header container.
+*/
 #header {
     width: 100%;
     height: auto;
@@ -18,8 +26,27 @@
     color: black;
 }
 
+/*
+ * This styles affects both the .header-top div and the .header-nav div
+*/
 .header-top,
 .header-nav {
+	/*
+	 * Firstly, remove all padding in the .header-nav and .header-top div's
+	 * Then add the relevant padding to the header.
+	 * The header width's of the the two div's are limited to 1200px. The
+	 * reason for using the padding to limit the width instead of max-width
+	 * is so that there will be a white background colour that fill the
+	 * header's full width.
+	 * To explain the padding calculations:
+	 * BOTH: Set the padding to the difference between the full width of
+	 * the header and 1200px, ie anything bigger than 1200px will have a
+	 * padding otherwise none.
+	 * LEFT: The part that says '+ var(--logo-width)' adds the
+	 * logo's width to the left padding of the header rows so that
+	 * the absolute logo will be positioned above the padding of width
+	 * --logo-width and not cover any text.
+	*/
     padding: 0;
     padding-left: calc(100% - 1200px + var(--logo-width));
     padding-right: calc(100% - 1200px);
@@ -33,15 +60,30 @@
 }
 
 #header .logo {
+	/*
+	 * The header logo is absolutely positioned above the left padding
+	 * that was calculated in the header row styles. The transform
+	 * translateY ensures that the logo is position perfectly in the
+	 * center of the header. How this works is that the logo's top
+	 * position is 50% and then the translate shifts the logo up by
+	 * half of the logo's height to perfectly center it in the header.
+	 *
+	 * The left is set to the left of the header padding excluding the
+	 * extra padding that was added for the --logo-width.
+	*/
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
     left: calc(100% - 1200px);
     width: var(--logo-width);
+	transform: translateY(-50%);
 }
 #header .logo img {
+	/*
+	 * The padding allows the img to be smaller than its container so
+	 * there is spacing between the logo image and the text of the header.
+	*/
     width: 100%;
-    padding: 15px;
+    padding-right: 15px;
 }
 
 .header-top {
@@ -69,6 +111,7 @@
 }
 .header-top .search-container input {
     flex: 1;
+	min-width: none;
     min-height: none;
     height: 25px;
     padding: 5px;
