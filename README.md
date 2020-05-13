@@ -8,5 +8,5 @@ The vision of our school is simple: it is to create lifelong learners with the s
 ***
 
 With that in mind, the Mzamomtsha Primary School has opened this website. Our goal is to allow our students to receive greater opportunities and achieve greater heights by sharing our amazing work with the world. Our 2 main goal of this website are the following:
-> Building a teacher body that is capable of sharing their love of life and learning with our learners, which is why we have teacher applications available, and
-> Building opportunities and experience through the use of monetary donations that the school will place toward improving facilities and refining the services that we provide so that we can allow our students to see what is out in the world.
+* Building a teacher body that is capable of sharing their love of life and learning with our learners, which is why we have teacher applications available, and
+* Building opportunities and experience through the use of monetary donations that the school will place toward improving facilities and refining the services that we provide so that we can allow our students to see what is out in the world.
