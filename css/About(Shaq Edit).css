@@ -1,3 +1,9 @@
+body{
+
+background-image: url('../images/Website Background(Shaq edit).png');
+background-size: cover;
+
+    }
 #content {
     display: block;
     max-width: 1200px;
