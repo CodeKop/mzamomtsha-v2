@@ -12,13 +12,14 @@ body{
   align-items: center;
   color: black;
   font-weight: bolder;
-  margin-left: -5%;
+  margin-left: -2%;
 }
 
 #events-wrapper {
   display: flex;
   flex-wrap: wrap;
   margin-left: 50px;
+  margin-bottom: 110px;
 }
 
 .content{
