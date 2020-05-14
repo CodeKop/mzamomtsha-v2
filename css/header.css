@@ -31,7 +31,7 @@
 */
 .header-top,
 .header-nav {
-	/*
+    /*
 	 * Firstly, remove all padding in the .header-nav and .header-top div's
 	 * Then add the relevant padding to the header.
 	 * The header width's of the the two div's are limited to 1200px. The
@@ -52,15 +52,10 @@
     padding-right: calc(100% - 1200px);
 
     margin: 0 auto;
-
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
 }
 
 #header .logo {
-	/*
+    /*
 	 * The header logo is absolutely positioned above the left padding
 	 * that was calculated in the header row styles. The transform
 	 * translateY ensures that the logo is position perfectly in the
@@ -75,10 +70,10 @@
     top: 50%;
     left: calc(100% - 1200px);
     width: var(--logo-width);
-	transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 #header .logo img {
-	/*
+    /*
 	 * The padding allows the img to be smaller than its container so
 	 * there is spacing between the logo image and the text of the header.
 	*/
@@ -89,6 +84,11 @@
 .header-top {
     padding-top: 5px;
     padding-bottom: 5px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header-nav {
@@ -111,14 +111,13 @@
 }
 .header-top .search-container input {
     flex: 1;
-	min-width: none;
+    min-width: none;
     min-height: none;
     height: 25px;
     padding: 5px;
 }
 
 .header-top .search-container button {
-    flex: 1;
     height: 25px;
     padding: 2.5px;
     width: 25px;
@@ -152,7 +151,7 @@
 
 #header .header-nav .navigation a:hover {
     background-color: #33f;
-    box-shadow: -5px 0 5px -5px #0007,5px 0 5px -5px #0007;
+    box-shadow: -5px 0 5px -5px #0007, 5px 0 5px -5px #0007;
     color: white;
 
     transition: 0.5s all;
@@ -160,4 +159,20 @@
     -o-transition: 0.5s all;
     -moz-transition: 0.5s all;
     -ms-transition: 0.5s all;
+}
+
+@media only screen and (max-width: 600px) {
+    #header .header-top {
+        flex-flow: column;
+    }
+    #header .search-container {
+        width: 100%;
+        padding: 0 15px;
+    }
+    #header .school-title {
+        text-align: center;
+    }
+    #header .navigation {
+        justify-content: center;
+    }
 }
