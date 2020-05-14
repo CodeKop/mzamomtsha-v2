@@ -29,3 +29,9 @@
     width: calc(100% + 60px);
     height: 150px;
 }
+
+@media only screen and (max-width: 768px) {
+    #events-wrapper {
+        flex-direction: column;
+    }
+}
