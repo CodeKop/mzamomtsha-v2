@@ -9,6 +9,12 @@ body {
 	width: auto;
 }
 
+body {
+    background-image: url("../images/background.png");
+    background-size: contain;
+    background-repeat: repeat-y;
+}
+
 ul {
 	list-style: none;
 }
