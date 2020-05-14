@@ -39,6 +39,7 @@
 #content .content-wrapper {
     display: flex;
     flex-direction: column;
+    max-width: 768px;
 }
 #content .content-left,
 #content .content-right {
