@@ -38,6 +38,7 @@
 
 #content .content-wrapper {
     display: flex;
+    flex-direction: column;
 }
 #content .content-left,
 #content .content-right {
@@ -82,6 +83,9 @@
 @media only screen and (min-width: 600px) {
     body {
         font-size: 20px;
+    }
+    #content .content-wrapper {
+        flex-direction: row;
     }
 }
 
