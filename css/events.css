@@ -26,7 +26,7 @@ body{
   padding-top: 10px;
   margin: 5px;
   border: 1px solid #999511;
-  background-color: steelblue;
+  background-color: blue;
   color: white;
   text-align: center;
   text-transform: uppercase;
@@ -233,7 +233,7 @@ h1{
 
 .flip-card-back3{
 
-  background-color: blue;
+  background-color: steelblue;
   border: 1px solid #999511;
   box-shadow: 5px 10px #888888;
   transform: rotateY(180deg);
