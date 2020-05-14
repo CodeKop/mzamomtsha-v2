@@ -85,13 +85,13 @@
     body {
         font-size: 20px;
     }
-    #content .content-wrapper {
-        flex-direction: row;
-    }
 }
 
 @media only screen and (min-width: 900px) {
     body {
         font-size: 25px;
+    }
+    #content .content-wrapper {
+        flex-direction: row;
     }
 }
