@@ -89,9 +89,6 @@
 }
 
 @media only screen and (min-width: 900px) {
-    body {
-        font-size: 25px;
-    }
     #content .content-wrapper {
         flex-direction: row;
         max-width: 100%;
