@@ -94,5 +94,6 @@
     }
     #content .content-wrapper {
         flex-direction: row;
+        max-width: 100%;
     }
 }
